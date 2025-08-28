@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke & Co</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div class="banner">Welcome to Luke & Co - Sign Up Now</div>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+            </a>
+        </div>
+        <nav arial-label="Main Navigation">
+            <ul class="nav-menu">
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-dropdown">
+                <button class="search-btn" id="search-btn" aria-label="Search">
+                    <img src="image-icon1.jpg" alt="Search">
+                </button>
+                <div class="search-box" id="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <div id="search-results"></div>
+                </div>
+            </div>
+
+            <a href="cart.html" aria-label="Cart">
+                <img src="image-icon2.jpg" alt="Cart">
+            </a>
+
+            <div class="profile-dropdown">
+                <button class="profile-btn" id="profile-btn" aria-label="User Profile">
+                    <img src="image-icon3.jpg" alt="User Profile" />
+                </button>
+                <div class="dropdown-content" id="dropdown-content"></div>
+            </div>
+            <div><button id="theme-toggle">🌙</button></div>
+
+        </div>
+
+    </header>
+
+
+    <section class="hero">
+        <video id="video1" autoplay muted playsinline>
+            <source src="placeholder-video.mp4" type="video/mp4">
+            Your browser does not support video tag
+        </video>
+        <video id="video2" muted playsinline>
+            <source src="placeholder2-video.mp4" type="video/mp4">
+            Your browser does not support video tag
+        </video>
+        <h1>Welcome to Luke & Co</h1>
+        <p>Discover the latest collections designed for comfort, style, and versatility.</p>
+        <a href="#shop-section" class="cta">Shop Now</a>
+    </section>
+
+    <main class="container">
+
+        <article class="main-card-section" id="shop-section">
+            <a href="men.html" class="main-card">
+                <image src="Section-image-men.png" alt="Men section">
+                    <h3>Shop for Men</h3>
+                    <p>Explore for more</p>
+                </image>
+
+                <a href="women.html" class="main-card">
+                    <image src="Section-image-women.png" alt="Women section">
+                        <h3>Shop for Women</h3>
+                        <p>Explore for more</p>
+                    </image>
+                </a>
+
+                <a href="kids.html" class="main-card">
+                    <image src="Section-image-kid.png" alt="Kids section">
+                        <h3>Shop for Kids</h3>
+                        <p>Explore for more</p>
+                    </image>
+                </a>
+
+                <a href="accessories.html" class="main-card">
+                    <image src="Section-image-accessories.png" alt="Accessories section">
+                        <h3>Shop for Accessories</h3>
+                        <p>Explore for more</p>
+                    </image>
+                </a>
+
+        </article>
+
+
+    </main>
+<!-- Cookie Consent Popup -->
+    <div id="cookie-consent" class="cookie-consent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>We use cookies</h3>
+                <p>We use cookies to enhance your browsing experience and analyze site traffic. By clicking "Accept All", you consent to our use of cookies. <a href="#" id="privacy-link">Privacy Policy</a></p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn decline" id="decline-cookies">Decline</button>
+                <button class="cookie-btn accept" id="accept-cookies">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+        <footer aria-label="Footer">
+            <p>Luke & Co</p>
+            <nav class="footer-nav">
+            <ul>
+                <li><a href="customer_s.html">Customer Service</a></li>
+                <li><a href="size_g.html">Size Guide</a></li>
+                <li><a href="privacy_p.html">Privacy Policy</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                
+            </ul>
+        <section class="social-media-part">
+            <h2>Follow us on</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/lukendco/" target="_blank" aria-label="Instagram">
+                    <img src="instagram_icons-removebg-preview (2).png" alt="Instagram Icon">
+                </a>
+                <a href="https://www.instagram.com/lukendco/" target="_blank" aria-label="Thread">
+                    <img src="threads icon.png" alt="Thread Icon">
+                </a>
+                <a href="https://x.com/LukeAnCo" target="_blank" aria-label="Instagram">
+                    <img src="twitter icons.png" alt="Twitter Icon">
+                </a>
+            </div>
+        </section>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/product-script.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+
+</html>

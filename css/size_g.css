@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: black;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Banner*/
+.banner {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner.hidden {
+    transform: translateY(-100%);
+}
+
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-top: 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    color: #666;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.icons img[src=""] {
+    display: none; 
+}
+
+.icons a {
+    margin-left: 1rem;
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.icons input[type="text"] {
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    width: 100px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+
+#theme-toggle:hover {
+    color: #666;
+}
+
+
+/*Main*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+
+/* Size Guide Specific Styles */
+.size-guide-header {
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.867));
+    border-radius: 10px;
+}
+
+.size-guide-header h1 {
+    font-size: 2.8rem;
+    color: white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.size-guide-header p {
+    font-size: 1.2rem;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Measurement Guide */
+.measurement-guide {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    margin-top: -25px;
+}
+
+.measurement-guide h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.measurement-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.measure-step {
+    text-align: center;
+    padding: 1.5rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.step-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.measure-step h3 {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.measure-step p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Category Selection */
+.category-selection {
+    margin-top: -60px;
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background: white;
+}
+
+.category-selection h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 1.5rem;
+}
+
+.category-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 1rem 2rem;
+    background: white;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    border-color: gray;
+    transform: translateY(-2px);
+}
+
+.category-btn.active {
+    background: gray;
+    color: white;
+    border-color: gray;
+}
+
+
+/* Size Charts */
+.size-charts {
+    margin-bottom: 3rem;
+    margin-top: -35px;
+}
+
+.size-chart {
+    display: none;
+}
+
+.size-chart.active {
+    display: block;
+}
+
+.size-chart h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.chart-container {
+    overflow-x: auto;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.size-table {
+    margin-top: -14px;
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.size-table th,
+.size-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.size-table th {
+    background: gray;
+    color: white;
+    font-weight: 600;
+}
+
+.size-table tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.size-table tr:hover {
+    background: #e8f4fc;
+}
+
+
+/* Size Calculator - Horizontal Layout */
+.size-calculator-horizontal {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    margin-top: -40px;
+}
+
+.size-calculator-horizontal h2 {
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.calculator-form-horizontal {
+    width: 100%;
+}
+
+.form-row-horizontal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+    margin-bottom: 1.5rem;
+}
+
+.form-group-horizontal {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-horizontal label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.9rem;
+}
+
+.form-group-horizontal input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group-horizontal input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.calculate-btn-horizontal {
+    padding: 1rem 1.5rem;
+    background: gray;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid #000;
+    height: 48px;
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.calculate-btn-horizontal:hover {
+    transform: translateY(-2px);
+}
+
+.result-horizontal {
+    padding: 1.5rem;
+    background: #e8f4fc;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    border: 2px solid #000;
+}
+
+
+/* Fit Guide */
+.fit-guide {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-top: -45px;
+}
+
+.fit-guide h2 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.fit-tips {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.fit-tip {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px solid #000;
+}
+
+.fit-tip h3 {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.fit-tip p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+
+/*Footer*/
+footer {
+    background: #000;
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-nav a {
+    color: #fff;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.footer-nav a:hover {
+    color: #ccc;
+}
+
+.newsletter h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5rem;
+    width: 70%;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.newsletter button {
+    background: #fff;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background: #e5e5e5;
+}
+
+button[type="submit"] {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+    background: #333;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .nav-menu {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .icons {
+        margin-top: 1rem;
+    }
+
+    .icons img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .category-buttons {
+        flex-direction: column;
+    }
+
+    .category-btn {
+        width: 100%;
+    }
+
+    .measurement-steps,
+    .fit-tips {
+        grid-template-columns: 1fr;
+    }
+
+    .size-table {
+        font-size: 0.9rem;
+    }
+
+    .size-table th,
+    .size-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .size-guide-header,
+    .measurement-guide,
+    .size-calculator-horizontal,
+    .fit-guide {
+        padding: 1.5rem;
+    }
+
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    /* Calculator mobile fixes */
+    .size-calculator-horizontal {
+        padding: 1.5rem;
+        margin-top: -20px;
+    }
+    
+    .size-calculator-horizontal h2 {
+        font-size: 1.5rem;
+    }
+    
+    .form-row-horizontal {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .calculate-btn-horizontal {
+        width: 100%;
+        margin-top: 0.5rem;
+        min-width: auto;
+    }
+    
+    .form-group-horizontal input {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .size-calculator-horizontal {
+        padding: 1rem;
+    }
+    
+    .size-calculator-horizontal h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .result-horizontal {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    
+    .size-guide-header h1 {
+        font-size: 2rem;
+    }
+    
+    .size-guide-header p {
+        font-size: 1rem;
+    }
+}

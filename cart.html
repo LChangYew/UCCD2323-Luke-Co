@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke & Co - Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="banner">Welcome to Luke & Co - Sign Up Now</div>
+    <header>
+        <div class="logo">
+            <a href="index.html">Luke & Co</a>
+        </div>
+
+        <nav aria-label="Main Navigation">
+            <ul class="nav-menu">
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-dropdown">
+                <button class="search-btn" id="search-btn" aria-label="Search">
+                    <img src="image-icon1.jpg" alt="Search">
+                </button>
+                <div class="search-box" id="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <div id="search-results"></div>
+                </div>
+            </div>
+
+            <a href="cart.html" aria-label="Cart">
+                <img src="image-icon2.jpg" alt="Cart">
+            </a>
+
+            <div class="profile-dropdown">
+                <button class="profile-btn" id="profile-btn" aria-label="User Profile">
+                    <img src="image-icon3.jpg" alt="User Profile" />
+                </button>
+                <div class="dropdown-content" id="dropdown-content"></div>
+            </div>
+            <div><button id="theme-toggle">🌙</button></div>
+
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="cart-section">
+            <h1>Your Shopping Cart</h1>
+            <div id="cart-items">
+            </div>
+            <div class="cart-summary">
+                <p>Total: <span id="cart-total">$0.00</span></p>
+                <a href="checkout.html" class="checkout-btn">Checkout</a>
+            </div>
+        </section>
+    </main>
+
+    <footer aria-label="Footer">
+        <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Size Guide</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/product-script.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile - Luke & Co</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <div class="banner">Welcome to Luke & Co - Sign Up Now</div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">Luke & Co</a></div>
+        <nav arial-label="Main Navigation">
+            <ul class="nav-menu">
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-dropdown">
+                <button class="search-btn" id="search-btn" aria-label="Search">
+                    <img src="image-icon1.jpg" alt="Search">
+                </button>
+                <div class="search-box" id="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <div id="search-results"></div>
+                </div>
+            </div>
+
+            <a href="cart.html" aria-label="Cart">
+                <img src="image-icon2.jpg" alt="Cart">
+            </a>
+            <a href="checkout.html" class="cta">Proceed to Checkout</a>
+
+            <div class="profile-dropdown">
+                <button class="profile-btn" id="profile-btn" aria-label="User Profile">
+                    <img src="image-icon3.jpg" alt="User Profile" />
+                </button>
+                <div class="dropdown-content" id="dropdown-content"></div>
+            </div>
+            <div><button id="theme-toggle">🌙</button></div>
+
+        </div>
+    </header>
+
+    <!-- User Profile in Auth-Card Style -->
+    <main class="auth-page">
+        <section class="auth-card" aria-label="User Profile">
+            <div class="auth-header">
+                <h1 style="font-size:1.25rem">User Profile</h1>
+            </div>
+
+            <!-- Greeting -->
+            <div class="profile-greeting">
+                <p id="greeting" style="font-weight:bold; font-size:1.1rem;">Hi, User!</p>
+            </div>
+
+            <!-- Profile Info -->
+            <div class="profile-info">
+                <div>
+                    <label><strong>Username</strong></label>
+                    <div id="profile-username" class="readonly-field"></div>
+                </div>
+                <div>
+                    <label><strong>Email</strong></label>
+                    <div id="profile-email" class="readonly-field"></div>
+                </div>
+            </div>
+
+            <div class="hr-or"><span>Update</span></div>
+
+            <!-- Change Password -->
+            <!-- Change Password -->
+                <div class="change-password-box">
+                    <h2 style="font-size:1rem; margin-bottom:.5rem;">Change Password</h2>
+                    <form id="change-password-form" novalidate>
+                        <div>
+                            <label for="current-password">Current Password</label>
+                            <input type="password" id="current-password" placeholder="Enter current password"
+                                required />
+                        </div>
+                        <div>
+                            <label for="new-password">New Password</label>
+                            <input type="password" id="new-password" placeholder="Enter new password" required />
+                        </div>
+                        <div>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" placeholder="Re-enter new password" required />
+                        </div>
+                        <button class="btn-primary" type="submit">Update Password</button>
+                    </form>
+                </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer aria-label="Footer">
+        <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Size Guide</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="profile.js"></script>
+    <script src="user-profile.js"></script>
+</body>
+
+</html>

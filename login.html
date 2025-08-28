@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke & Co — Sign In / Sign Up</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- jQuery (for REST calls) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Google Identity Services (new Sign-In) -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com" />
+
+</head>
+
+<body>
+    <div class="topbar"><a href="index.html">← Back to Home</a></div>
+
+    <main class="auth-page">
+        <section class="auth-card" aria-label="Authentication">
+            <div class="auth-header">
+                <h1 style="font-size:1.25rem">Luke &amp; Co</h1>
+                <div class="auth-tabs" role="tablist" aria-label="Auth tabs">
+                    <button id="tab-login" class="active" role="tab" aria-controls="panel-login"
+                        aria-selected="true">Login</button>
+                    <button id="tab-signup" role="tab" aria-controls="panel-signup" aria-selected="false">Sign
+                        Up</button>
+                </div>
+            </div>
+
+            <!-- Login Panel -->
+            <div id="panel-login" role="tabpanel" aria-labelledby="tab-login">
+                <form id="login-form" novalidate>
+                    <div>
+                        <label for="login-email">Email</label>
+                        <input id="login-email" type="email" placeholder="you@example.com" required />
+                    </div>
+                    <div>
+                        <label for="login-password">Password</label>
+                        <input id="login-password" type="password" placeholder="********" required />
+                    </div>
+                    <button class="btn-primary" type="submit">Login</button>
+                    <div id="login-msg" class="msg" aria-live="polite"></div>
+                </form>
+
+                <div class="hr-or"><span>or</span></div>
+
+                <!-- Social Logins -->
+                <div class="social-buttons">
+                    <div id="g_id_onload" data-client_id="YOUR_GOOGLE_CLIENT_ID.apps.googleusercontent.com"
+                        data-context="signin" data-callback="handleGoogleResponse" data-auto_prompt="false">
+                    </div>
+                    <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
+                        data-text="signin_with" data-shape="rectangular" data-logo_alignment="left"></div>
+                </div>
+            </div>
+            
+            <!-- Sign Up Panel -->
+            <div id="panel-signup" role="tabpanel" aria-labelledby="tab-signup" hidden>
+                <form id="signup-form" novalidate>
+                    <div>
+                        <label for="signup-name">Full Name</label>
+                        <input id="signup-name" type="text" placeholder="Jane Doe" required />
+                    </div>
+                    <div>
+                        <label for="signup-email">Email</label>
+                        <input id="signup-email" type="email" placeholder="you@example.com" required />
+                    </div>
+                    <div>
+                        <label for="signup-password">Password</label>
+                        <input id="signup-password" type="password" placeholder="Min 8 characters" required />
+                    </div>
+                    <div>
+                        <label for="signup-confirm">Confirm Password</label>
+                        <input id="signup-confirm" type="password" placeholder="Re-enter password" required />
+                    </div>
+                    <button class="btn-primary" type="submit">Create Account</button>
+                    <div id="signup-msg" class="msg" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>

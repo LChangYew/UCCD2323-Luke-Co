@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Details - Luke & Co</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="details-page">
+  <h1>Checkout - Your Details</h1>
+  
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+            </a>
+        </div>
+        <h1 style="font-size: 1.2rem; text-transform: uppercase;">Checkout - Details</h1>
+        <div><button id="theme-toggle">🌙</button></div>
+
+    </header>
+    <main class="checkout-container">
+        <div class="steps">
+            <span class="step active">Details</span>
+            <span class="step">Payment</span>
+            <span class="step">Summary</span>
+        </div>
+        <form id="checkout-form">
+            <section class="checkout-step active" id="step-details">
+                <h2>Customer Details</h2>
+                <label>Full Name* <input type="text" name="fullName" required></label>
+                <label>Email* <input type="email" name="email" required></label>
+                <label>Phone* <input type="tel" name="phone" required></label>
+                <label>Address* <input type="text" name="address" required></label>
+                <div class="order-items">
+                    <h3>Order Items</h3>
+                    <div id="order-items-list"></div>
+                    <p><strong>Total: </strong><span id="order-total">MYR 0.00</span></p>
+                </div>
+                <button type="button" class="checkout-btn next-btn" id="continue-payment">Continue to Payment</button>
+            </section>
+        </form>
+    </main>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

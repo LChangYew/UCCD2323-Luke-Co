@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Payment - Luke & Co</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="payment-page">
+  <h1>Checkout - Payment</h1>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+            </a>
+        </div>
+        <h1 style="font-size: 1.2rem; text-transform: uppercase;">Checkout - Payment</h1>
+        <div><button id="theme-toggle">🌙</button></div>
+
+    </header>
+    <main class="checkout-container">
+        <div class="steps">
+            <span class="step">Details</span>
+            <span class="step active">Payment</span>
+            <span class="step">Summary</span>
+        </div>
+        <form id="checkout-form" action="summary.html" method="get">
+            <section class="checkout-step active" id="step-payment">
+                <h2>Payment Method</h2>
+                <label><input type="radio" name="payment" value="Card" required>Credit/ Debit Card</label>
+                <label><input type="radio" name="payment" value="Bank">Online Banking</label>
+                <label><input type="radio" name="payment" value="Ewallet">E-wallet</label>
+                <label><input type="radio" name="payment" value="CashOnDelivery">Cash on Delivery</label>
+                <div class="order-items">
+                    <h3>Order Items</h3>
+                    <div id="order-items-list"></div>
+                    <p><strong>Total: </strong><span id="order-total">MYR 0.00</span></p>
+                </div>
+                <button type="button" class="checkout-btn prev-btn" onclick="window.location.href='checkout.html'">Back</button>
+                <button type="submit" class="checkout-btn next-btn" id="continue-summary">Continue to Summary</button>
+            </section>
+        </form>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

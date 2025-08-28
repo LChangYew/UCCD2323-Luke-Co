@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke & Co | Kids </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product.css">
+    
+</head>
+
+<body>
+    <div class="banner">Welcome to Luke & Co - Sign Up Now</div>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+            </a>
+        </div>
+        <nav arial-label="Main Navigation">
+            <ul class="nav-menu">
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-dropdown">
+                <button class="search-btn" id="search-btn" aria-label="Search">
+                    <img src="image-icon1.jpg" alt="Search">
+                </button>
+                <div class="search-box" id="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <div id="search-results"></div>
+                </div>
+            </div>
+
+            <a href="cart.html" aria-label="Cart">
+                <img src="image-icon2.jpg" alt="Cart">
+            </a>
+
+            <div class="profile-dropdown">
+                <button class="profile-btn" id="profile-btn" aria-label="User Profile">
+                    <img src="image-icon3.jpg" alt="User Profile" />
+                </button>
+                <div class="dropdown-content" id="dropdown-content"></div>
+            </div>
+            <div><button id="theme-toggle">🌙</button></div>
+
+        </div>
+
+    </header>
+
+    <main class="container">
+
+        <h2 class="section-title">Kid’s Collection</h2>
+
+        <div class="breadcrumb-wrapper">
+            <nav class="breadcrumb">
+                <ul>
+                    <li><a href="index.html">Luke & Co</a></li>
+                    <li>/</li>
+                    <li><a href="kids.html">Kids</a></li>
+                </ul>
+            </nav>
+            <button class="sidebar-toggle">
+                Filter <img src="Filter.png" alt="Filter icon">
+            </button>
+
+        </div>
+
+        <div class="main-content-wrapper">
+
+            <aside class="sidebar">
+
+                <div class="filter-section">
+                    <h2>Category</h2>
+                    <ul>
+                        <li><input type="checkbox" value="shirts"><label for="shirts">Shirts</label></li>
+                        <li><input type="checkbox" value="hoodie"><label for="hoodie">Hoodies</label></li>
+                        <li><input type="checkbox" value="pants"><label for="pants">Pants</label></li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h2>Price Range</h2>
+
+                    <div class="slider">
+
+                        <div class="price-slider"></div>
+
+                    </div>
+
+                    <div class="range-input">
+
+                        <input type="range" class="min-range" min="0" max="1000" value="0" step="1">
+                        <input type="range" class="max-range" min="0" max="1000" value="1000" step="1">
+
+                    </div>
+
+                    <div class="price-input">
+
+                        <div class="price-field">
+                            <input type="number" class="min-input" value="0">
+                            <input type="number" class="max-input" value="1000">
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+            </aside>
+
+            <section class="product-section">
+
+                <div class="product-card" id="17" data-category="shirts" data-price="49">
+                    <img src="Kid_image/White_shirt.png" alt="White Shirt">
+
+                    <h3>White Shirt</h3>
+                    <p class="price">MYR 49.00</p>
+
+                    <a href="detail.html?id=17" class="detail-link">+ More Detail</a>
+                </div>
+
+
+                <div class="product-card" id="18" data-category="shirts" data-price="100">
+                    <img src="Kid_image/Black_shirt.png" alt="Black Shirt">
+
+                    <h3>Black Shirt</h3>
+                    <p class="price">MYR 100.00</p>
+
+                    <a href="detail.html?id=18" class="detail-link">+ More Detail</a>
+                </div>
+
+                <div class="product-card" id="19" data-category="shirts" data-price="99">
+                    <img src="Kid_image/Blue_shirt.png" alt="Blue Shirt">
+
+                    <h3>Blue Shirt</h3>
+                    <p class="price">MYR 99.00</p>
+
+                    <a href="detail.html?id=19" class="detail-link">+ More Detail</a>
+                </div>
+
+                <div class="product-card" id="20" data-category="shirts" data-price="40">
+                    <img src="Kid_image/Pink_shirt.png" alt="Pink Shirt">
+
+                    <h3>Pink Shirt</h3>
+                    <p class="price">MYR 40.00</p>
+
+                    <a href="detail.html?id=20" class="detail-link">+ More Detail</a>
+                </div>
+
+                <div class="product-card" id="21" data-category="pants" data-price="99">
+                    <img src="Kid_image/Blue_pants.png" alt="Blue Pants">
+
+                    <h3>Blue Pants</h3>
+                    <p class="price">MYR 99.00</p>
+
+                    <a href="detail.html?id=21" class="detail-link">+ More Detail</a>
+                </div>
+
+                <div class="product-card" id="22" data-category="pants" data-price="50">
+                    <img src="Kid_image/Black_pants.png" alt="Black Pants">
+
+                    <h3>Black Pants</h3>
+                    <p class="price">MYR 50.00</p>
+
+                    <a href="detail.html?id=22" class="detail-link">+ More Detail</a>
+                </div>
+
+                <div class="product-card" id="23" data-category="hoodie" data-price="150">
+                    <img src="Kid_image/Black_hoody.png" alt="Black Hoodie">
+
+                    <h3>Black Hoodie</h3>
+                    <p class="price">MYR 150.00</p>
+
+                    <a href="detail.html?id=23" class="detail-link">+ More Detail</a>
+                </div>
+
+                <div class="product-card" id="24" data-category="hoodie" data-price="51">
+                    <img src="Kid_image/White_hoody.png" alt="White Hoodie">
+
+                    <h3>White Hoodie</h3>
+                    <p class="price">MYR 51.00</p>
+
+                    <a href="detail.html?id=24" class="detail-link">+ More Detail</a>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer aria-label="Footer">
+        <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="customer_s.html">Customer Service</a></li>
+                <li><a href="size_g.html">Size Guide</a></li>
+                <li><a href="privacy_p.html">Privacy Policy</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+
+            </ul>
+        <section class="social-media-part">
+            <h2>Follow us on</h2>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/lukendco/" target="_blank" aria-label="Instagram">
+                    <img src="instagram_icons-removebg-preview (2).png" alt="Instagram Icon">
+                </a>
+                <a href="https://www.instagram.com/lukendco/" target="_blank" aria-label="Thread">
+                    <img src="threads icon.png" alt="Thread Icon">
+                </a>
+                <a href="https://x.com/LukeAnCo" target="_blank" aria-label="Instagram">
+                    <img src="twitter icons.png" alt="Twitter Icon">
+                </a>
+            </div>
+        </section>
+    </footer>
+    <script src="js/product-script.js"></script>
+</body>
+
+</html>

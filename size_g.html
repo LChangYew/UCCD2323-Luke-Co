@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Head-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke & Co</title>
+     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/size_g.css">
+</head>
+
+<!--Body-->
+<body>
+    <div class="banner">Welcome to Luke & Co - Sign Up Now</div>
+    <header>
+        <div class="logo"><a href="index.html">Luke & Co</a></div>
+        <nav arial-label="Main Navigation">
+            <ul class="nav-menu">
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-dropdown">
+                <button class="search-btn" id="search-btn" aria-label="Search">
+                    <img src="image-icon1.jpg" alt="Search">
+                </button>
+                <div class="search-box" id="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <div id="search-results"></div>
+                </div>
+            </div>
+
+            <a href="cart.html" aria-label="Cart">
+                <img src="image-icon2.jpg" alt="Cart">
+            </a>
+
+            <div class="profile-dropdown">
+                <button class="profile-btn" id="profile-btn" aria-label="User Profile">
+                    <img src="image-icon3.jpg" alt="User Profile" />
+                </button>
+                <div class="dropdown-content" id="dropdown-content"></div>
+            </div>
+            <div><button id="theme-toggle">🌙</button></div>
+
+        </div>
+    </header>
+
+    <!--Main-->
+    <main class="container">
+        <div class="size-guide-header">
+            <h1>Size Guide</h1>
+            <p>Unsure about your size? Our comprehensive size guide will help you find the perfect fit for you.</p>
+        </div>
+
+        <div class="size-guide-content">
+            <!-- Measurement Guide -->
+            <div class="measurement-guide">
+                <h2>How to Measure ???</h2>
+                <div class="measurement-steps">
+                    <div class="measure-step">
+                        <div class="step-icon">✔️</div>
+                        <h3>Chest/Bust</h3>
+                        <p>Measure around the fullest part of your chest, keeping the tape horizontal.</p>
+                    </div>
+                    <div class="measure-step">
+                        <div class="step-icon">✔️</div>
+                        <h3>Waist</h3>
+                        <p>Measure around your natural waistline, keeping the tape slightly loose.</p>
+                    </div>
+                    <div class="measure-step">
+                        <div class="step-icon">✔️</div>
+                        <h3>Hips</h3>
+                        <p>Measure around the fullest part of your hips, about 8 inches below your waist.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Selection -->
+            <div class="category-selection">
+                <h2>Select Category</h2>
+                <div class="category-buttons">
+                    <button class="category-btn active" data-category="men">Men</button>
+                    <button class="category-btn" data-category="women">Women</button>
+                    <button class="category-btn" data-category="kids">Kids</button>
+                </div>
+            </div>
+
+            <!-- Size Charts -->
+            <div class="size-charts">
+                <!-- Men's Size Chart -->
+                <div class="size-chart active" id="men-chart">
+                    <h2>Men's Size Chart</h2>
+                    <div class="chart-container">
+                        <table class="size-table">
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>Chest (cm)</th>
+                                    <th>Waist (cm)</th>
+                                    <th>Hip (cm)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>XS</td>
+                                    <td>81-86</td>
+                                    <td>66-71</td>
+                                    <td>86-91</td>
+                                </tr>
+                                <tr>
+                                    <td>S</td>
+                                    <td>87-91</td>
+                                    <td>72-76</td>
+                                    <td>92-96</td>
+                                </tr>
+                                <tr>
+                                    <td>M</td>
+                                    <td>92-97</td>
+                                    <td>77-82</td>
+                                    <td>97-102</td>
+                                </tr>
+                                <tr>
+                                    <td>L</td>
+                                    <td>98-104</td>
+                                    <td>83-89</td>
+                                    <td>103-109</td>
+                                </tr>
+                                <tr>
+                                    <td>XL</td>
+                                    <td>105-112</td>
+                                    <td>90-97</td>
+                                    <td>110-117</td>
+                                </tr>
+                                <tr>
+                                    <td>XXL</td>
+                                    <td>113-120</td>
+                                    <td>98-105</td>
+                                    <td>118-125</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Women's Size Chart -->
+                <div class="size-chart" id="women-chart">
+                    <h2>Women's Size Chart</h2>
+                    <div class="chart-container">
+                        <table class="size-table">
+                            <thead>
+                                <tr>
+                                    <th>Size</th>
+                                    <th>Bust (cm)</th>
+                                    <th>Waist (cm)</th>
+                                    <th>Hip (cm)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>XS</td>
+                                    <td>76-81</td>
+                                    <td>61-66</td>
+                                    <td>86-91</td>
+                                </tr>
+                                <tr>
+                                    <td>S</td>
+                                    <td>82-86</td>
+                                    <td>67-71</td>
+                                    <td>92-96</td>
+                                </tr>
+                                <tr>
+                                    <td>M</td>
+                                    <td>87-92</td>
+                                    <td>72-76</td>
+                                    <td>97-102</td>
+                                </tr>
+                                <tr>
+                                    <td>L</td>
+                                    <td>93-99</td>
+                                    <td>77-83</td>
+                                    <td>103-109</td>
+                                </tr>
+                                <tr>
+                                    <td>XL</td>
+                                    <td>100-107</td>
+                                    <td>84-91</td>
+                                    <td>110-117</td>
+                                </tr>
+                                <tr>
+                                    <td>XXL</td>
+                                    <td>108-115</td>
+                                    <td>92-99</td>
+                                    <td>118-125</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Kids' Size Chart -->
+                <div class="size-chart" id="kids-chart">
+                    <h2>Kids' Size Chart</h2>
+                    <div class="chart-container">
+                        <table class="size-table">
+                            <thead>
+                                <tr>
+                                    <th>Age (Y)</th>
+                                    <th>Chest (cm)</th>
+                                    <th>Waist (cm)</th>
+                                    <th>Hip (cm)</th>
+                                    <th>Size</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>4-5</td>
+                                    <td>52-58</td>
+                                    <td>50-54</td>
+                                    <td>54-60</td>
+                                    <td>XS</td>
+                                </tr>
+                                <tr>
+                                    <td>6-7</td>
+                                    <td>60-62</td>
+                                    <td>54-56</td>
+                                    <td>62-65</td>
+                                    <td>S</td>
+                                </tr>
+                                <tr>
+                                    <td>8-9</td>
+                                    <td>63-67</td>
+                                    <td>56-59</td>
+                                    <td>68-71</td>
+                                    <td>M</td>
+                                </tr>
+                                <tr>
+                                    <td>10-11</td>
+                                    <td>70-73</td>
+                                    <td>60-63</td>
+                                    <td>74-77</td>
+                                    <td>L</td>
+                                </tr>
+                                <tr>
+                                    <td>12-15</td>
+                                    <td>74-86</td>
+                                    <td>64-72</td>
+                                    <td>74-91</td>
+                                    <td>XL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+         <!-- Size Calculator - Horizontal Layout -->
+        <div class="size-calculator-horizontal">
+            <h2>Find Your Size</h2>
+            <div class="calculator-form-horizontal">
+                <div class="form-row-horizontal">
+                    <div class="form-group-horizontal">
+                        <label for="height">Height (cm)</label>
+                        <input type="number" id="height" placeholder="e.g., 175" min="0">
+                    </div>
+                    <div class="form-group-horizontal">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="number" id="weight" placeholder="e.g., 68" min="0">
+                    </div>
+                    <div class="form-group-horizontal">
+                        <label for="measurement">Chest/Bust (cm)</label>
+                        <input type="number" id="measurement" placeholder="e.g., 95" min="0">
+                    </div>
+                    <div class="form-group-horizontal">
+                        <button id="calculate-btn" class="calculate-btn-horizontal">Calculate</button>
+                    </div>
+                </div>
+                <div id="result" class="result-horizontal">
+                    <!-- Results will appear here -->
+                </div>
+            </div>
+        </div>
+
+            <!-- Fit Guide -->
+            <div class="fit-guide">
+                <h2>Fit Guide</h2>
+                <div class="fit-tips">
+                    <div class="fit-tip">
+                        <h3>🔄 Exchange Policy</h3>
+                        <p>Not happy with the fit? We offer free size exchanges within 30 days of purchase.<a href="return&ex.html"> Return & Exchange</a> process</p>
+                    </div>
+                    <div class="fit-tip">
+                        <h3>💡 Pro Tip</h3>
+                        <p>When between sizes, we recommend choosing the larger size for comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer aria-label="Footer">
+         <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="customer_s.html">Customer Service</a></li>
+                <li><a href="size_g.html">Size Guide</a></li>
+                <li><a href="privacy_p.html">Privacy Policy</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="js/size_g.js"></script>
+    <script src="js/about_us.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/product-script.js"></script>
+
+</body>
+
+</html>

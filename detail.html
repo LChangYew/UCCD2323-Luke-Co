@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke & Co | Accessories </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+    <div class="banner">Welcome to Luke & Co - Sign Up Now</div>
+    <header>
+        <div class="logo">
+            <a href="index.html">Luke & Co</a>
+        </div>
+
+        <nav arial-label="Main Navigation">
+            <ul class="nav-menu">
+                <li><a href="men.html">Men</a></li>
+                <li><a href="women.html">Women</a></li>
+                <li><a href="kids.html">Kids</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-dropdown">
+                <button class="search-btn" id="search-btn" aria-label="Search">
+                    <img src="image-icon1.jpg" alt="Search">
+                </button>
+                <div class="search-box" id="search-box">
+                    <input type="text" id="search-input" placeholder="Search products...">
+                    <div id="search-results"></div>
+                </div>
+            </div>
+
+            <a href="cart.html" aria-label="Cart">
+                <img src="image-icon2.jpg" alt="Cart">
+            </a>
+
+            <div class="profile-dropdown">
+                <button class="profile-btn" id="profile-btn" aria-label="User Profile">
+                    <img src="image-icon3.jpg" alt="User Profile" />
+                </button>
+                <div class="dropdown-content" id="dropdown-content"></div>
+            </div>
+            <div><button id="theme-toggle">🌙</button></div>
+
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="breadcrumb-wrapper">
+            <nav class="breadcrumb">
+                <ul id="breadcrumb"></ul>
+            </nav>
+            <button class="sidebar-toggle" id="share-btn">Share<img src="Share.png" alt="Share"></button>
+        </div>
+
+        <div class="product-detail-container">
+
+            <div class="preview">
+                <img id="main-image" src="" alt="Product Image">
+            </div>
+
+            <div class="detail" id="product-detail">
+                <div id="product-detail">
+                    <h2 id="title"></h2>
+                    <p id="price"></p>
+                    <p id="description"></p>
+
+                    <!-- Size Buttons -->
+                    <label>Choose Size:</label>
+                    <div class="size-options">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+
+                    <!-- Quantity Counter -->
+                    <label>Quantity:</label>
+                    <div class="quantity-control">
+                        <button class="qty-btn" id="decrease">-</button>
+                        <span id="quantity-value">1</span>
+                        <button class="qty-btn" id="increase">+</button>
+                    </div>
+
+                    <!-- Add to Cart -->
+                    <button id="add-to-cart">Add to Cart</button>
+
+                </div>
+
+            </div>
+
+    </main>
+
+    <footer aria-label="Footer">
+        <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Size Guide</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/product-script.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>

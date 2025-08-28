@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luke & Co - About Us</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/about_us.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Top Banner -->
+    <div class="top-banner" id="topBanner">
+      welcome to Luke & Co
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid px-0">
+            <!-- Logo -->
+            <a class="navbar-brand logo" href="index.html">Luke & Co</a>
+
+            <!-- Mobile Toggle Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="men.html">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="women.html">Women</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kids.html">Kids</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="accessories.html">Accessories</a>
+                </li>
+              </ul>
+
+              <!-- Header Icons -->
+              <div class="icons">
+                <div class="search-dropdown">
+                  <button
+                    class="search-btn"
+                    id="search-btn"
+                    aria-label="Search"
+                  >
+                    <img src="image-icon1.jpg" alt="Search" />
+                  </button>
+                  <div class="search-box" id="search-box">
+                    <input
+                      type="text"
+                      id="search-input"
+                      placeholder="Search products..."
+                    />
+                    <div id="search-results"></div>
+                  </div>
+                </div>
+
+                <a href="cart.html" aria-label="Cart">
+                  <img src="image-icon2.jpg" alt="Cart" />
+                </a>
+
+                <div class="profile-dropdown">
+                  <button
+                    class="profile-btn"
+                    id="profile-btn"
+                    aria-label="User Profile"
+                  >
+                    <img src="image-icon3.jpg" alt="User Profile" />
+                  </button>
+                  <div class="dropdown-content" id="dropdown-content"></div>
+                </div>
+                <div><button id="theme-toggle">🌙</button></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section text-center">
+          <div class="row">
+            <div class="col-12">
+              <h1>About Luke & Co</h1>
+              <p>Redefining fashion with quality, style, and affordability</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section">
+          <div class="row">
+            <div class="col-12">
+              <p>
+                Luke & Co was established in 2024 with a fresh vision for the
+                fashion industry. Founded by a team of young entrepreneurs
+                passionate about style and innovation, we recognized the need
+                for a fashion destination that combines contemporary trends with
+                timeless elegance.
+              </p>
+
+              <p>
+                Our journey began with a simple idea: to create a brand that
+                offers high-quality fashion at accessible prices without
+                compromising on style or ethical production. We started with a
+                carefully curated collection of shirts, shorts, and essential
+                wardrobe pieces designed for the modern individual.
+              </p>
+
+              <p>
+                As a new player in the market, we're embracing digital
+                innovation to create seamless shopping experiences for our
+                customers. Our online platform is designed to make fashion
+                discovery effortless, with personalized recommendations and easy
+                navigation.
+              </p>
+
+              <p>
+                What sets Luke & Co apart is our dedication to authenticity and
+                customer connection. We're not just selling clothes; we're
+                building a community of fashion enthusiasts who value quality,
+                style, and conscious consumption. We listen to our customers'
+                feedback and continuously evolve our collections to meet their
+                needs.
+              </p>
+
+              <p>
+                Looking ahead, we're excited to grow alongside our customers,
+                introducing new collections, expanding our product range, and
+                exploring sustainable fashion initiatives. Our commitment
+                remains steadfast: to provide exceptional fashion that empowers
+                self-expression and confidence.
+              </p>
+
+              <p>
+                Join us on this exciting journey as we write the next chapter of
+                Malaysian fashion together.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Sign up for 10% off</h2>
+            <form id="newsletter-form" class="newsletter-form">
+              <div class="row g-2 justify-content-center">
+                <div class="col-12 col-md-8">
+                  <label for="newsletter-email" class="visually-hidden"
+                    >Email:</label
+                  >
+                  <input
+                    type="email"
+                    id="newsletter-email"
+                    class="form-control newsletter-input"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                  <button type="submit" class="btn newsletter-btn w-100">
+                    Sign up
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer" aria-label="Footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav justify-content-center flex-wrap">
+                <li class="nav-item">
+                  <a class="nav-link" href="customer_s.html"
+                    >Customer Service</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="size_g.html">Size Guide</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="privacy_p.html">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about_us.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/about_us.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/product-script.js"></script>
+  </body>
+</html>

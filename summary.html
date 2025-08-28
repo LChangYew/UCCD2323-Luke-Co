@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Summary - Luke & Co</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="summary-page">
+  <h1>Checkout - Order Summary</h1>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="luke--co-high-resolution-logo-transparent.png" alt="LUKE & CO">
+            </a>
+        </div>
+        <h1 style="font-size: 1.2rem; text-transform: uppercase;">Checkout - Summary</h1>
+        <div><button id="theme-toggle">🌙</button></div>
+
+    </header>
+    <main class="checkout-container">
+        <div class="steps">
+            <span class="step">Details</span>
+            <span class="step">Payment</span>
+            <span class="step active">Summary</span>
+        </div>
+        <form id="checkout-form">
+            <section class="checkout-step active" id="step-summary">
+                <h2>Order Summary</h2>
+                <div class="order-details">
+                    <h3>Customer Details</h3>
+                    <p><strong>Full Name:</strong> <span id="summary-fullName"></span></p>
+                    <p><strong>Email:</strong> <span id="summary-email"></span></p>
+                    <p><strong>Phone:</strong> <span id="summary-phone"></span></p>
+                    <p><strong>Address:</strong> <span id="summary-address"></span></p>
+                    <h3>Payment Method</h3>
+                    <p><strong>Method:</strong> <span id="summary-payment"></span></p>
+                    <h3>Order Items</h3>
+                    <div class="order-items" id="order-items-list"></div>
+                    <p><strong>Total: </strong><span id="summary-total">MYR 0.00</span></p>
+                </div>
+                <button type="button" class="checkout-btn prev-btn" onclick="window.location.href='payment.html'">Back</button>
+                <button type="submit" class="checkout-btn">Confirm Order</button>
+            </section>
+        </form>
+        <div id="success-message" class="checkout-success" style="display: none;">
+            <h2>Order Confirmed!</h2>
+            <p>Thank you for shopping with Luke & Co. You will be redirected shortly.</p>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
