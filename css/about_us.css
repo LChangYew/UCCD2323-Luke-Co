@@ -165,57 +165,6 @@ body {
     text-align: justify;
 }
 
-/* Newsletter Section */
-.newsletter-section {
-    background: var(--primary-color);
-    color: white;
-    padding: 3rem 0;
-}
-
-.newsletter-section h2 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    font-weight: 600;
-}
-
-.newsletter-form {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.newsletter-input {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    border-radius: 4px;
-}
-
-.newsletter-input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.newsletter-input:focus {
-    background: transparent;
-    border-color: white;
-    color: white;
-    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
-}
-
-.newsletter-btn {
-    background: white;
-    color: var(--primary-color);
-    border: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    border-radius: 4px;
-}
-
-.newsletter-btn:hover {
-    background: #e5e5e5;
-    color: var(--primary-color);
-}
-
 /* Footer */
 footer {
     background: #000;
@@ -240,43 +189,6 @@ footer {
 
 .footer-nav a:hover {
     color: #ccc;
-}
-
-.newsletter h2 {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
-.newsletter form {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.newsletter input[type="email"] {
-    padding: 0.5rem;
-    width: 70%;
-    border: 1px solid #fff;
-    background: transparent;
-    color: #fff;
-    border-radius: 4px;
-}
-
-.newsletter button {
-    background: #fff;
-    color: #000;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 4px;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.newsletter button:hover {
-    background: #e5e5e5;
 }
 
 button[type="submit"] {
@@ -360,14 +272,13 @@ button[type="submit"]:hover {
 }
 
 /* Smooth Transitions */
-.nav-link, .btn, .newsletter-input {
+.nav-link, .btn {
     transition: all 0.3s ease;
 }
 
 /* Focus States for Accessibility */
 .btn:focus,
-.nav-link:focus,
-.newsletter-input:focus {
+.nav-link:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
@@ -376,7 +287,6 @@ button[type="submit"]:hover {
 @media print {
     .top-banner,
     .main-header,
-    .newsletter-section,
     .main-footer {
         display: none;
     }

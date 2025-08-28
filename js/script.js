@@ -37,16 +37,6 @@ if (video2) {
   });
 }
 
-const newsletterForm = document.getElementById("newsletter-form");
-if (newsletterForm) {
-  newsletterForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    const email = document.getElementById("newsletter-email").value;
-    alert("Thank you for signing up, " + email + "!");
-    this.reset();
-  });
-}
-
 // Dropdown toggle
 const profileBtn = document.getElementById("profile-btn");
 const profileDropdown = document.querySelector(".profile-dropdown");
