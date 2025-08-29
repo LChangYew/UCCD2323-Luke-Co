@@ -207,8 +207,6 @@ if (product) {
     <li>/</li>
     <li>${product.title}</li>
   `;
-} else {
-  document.getElementById("product-detail").textContent = "Product not found!";
 }
 
 document.addEventListener('DOMContentLoaded', () => {
