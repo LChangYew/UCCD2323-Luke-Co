@@ -145,49 +145,4 @@ document.addEventListener("DOMContentLoaded", () => {
   
 });
 
-//API syns cookies between mobile devices and laptop device
-$(document).ready(function () {
 
-  // Autofill when page loads
-  const email = localStorage.getItem("userEmail"); // we assume you save it when user enters email
-  if (email) {
-    $.get(/api/checkout/$,{email}, function (data) {
-      if (data) {
-        $("[name='fullName']").val(data.fullName);
-        $("[name='email']").val(data.email);
-        $("[name='phone']").val(data.phone);
-        $("[name='address']").val(data.address);
-      }
-    });
-  }
-
-  // Save form data on submit
-  $("#checkout-form").on("submit", function (e) {
-    e.preventDefault();
-
-    const formData = {
-      fullName: $("[name='fullName']").val(),
-      email: $("[name='email']").val(),
-      phone: $("[name='phone']").val(),
-      address: $("[name='address']").val()
-    };
-
-    // Save email locally so we can call API next time
-    localStorage.setItem("userEmail", formData.email);
-
-    $.ajax({
-      url: "/api/checkout/save",
-      type: "POST",
-      contentType: "application/json",
-      data: JSON.stringify(formData),
-      success: function () {
-        console.log("✅ Data saved to API");
-        window.location.href = "payment.html"; // move to next step
-      },
-      error: function (err) {
-        console.error("❌ Error saving data", err);
-      }
-    });
-  });
-
-});
