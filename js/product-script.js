@@ -84,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-/*https://www.geeksforgeeks.org/javascript/price-range-slider-with-min-max-input-using-html-css-and-javascript/*/
 
 document.addEventListener('DOMContentLoaded', () => {
   const products = document.querySelectorAll('.product-card');
